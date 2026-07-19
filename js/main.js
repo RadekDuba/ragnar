@@ -150,27 +150,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             });
         }
-
-        // --- Hero Poster Bindings (If on index/home page) ---
-        const heroPoster = document.getElementById('hero-poster-trigger');
-        if (heroPoster) {
-            heroPoster.addEventListener('click', () => {
-                // Setup activeImages with just this single poster image
-                activeImages = [{
-                    src: heroPoster.getAttribute('src'),
-                    caption: "Blues For Ragnar by Reggynka – Prestižní výstavní plakát"
-                }];
-                currentImgIndex = 0;
-                
-                // Hide navigation arrows since there's only 1 image
-                if (lightboxPrev) lightboxPrev.style.display = 'none';
-                if (lightboxNext) lightboxNext.style.display = 'none';
-                
-                showImageAtIndex(0);
-                lightbox.classList.add('active');
-                document.body.style.overflow = 'hidden';
-            });
-        }
     }
 
     // --- Gallery Filtering ---

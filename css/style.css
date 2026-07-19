@@ -395,7 +395,6 @@ header.scrolled .nav-container {
     transition: var(--transition-smooth);
     max-width: 380px;
     width: 100%;
-    cursor: zoom-in;
 }
 
 .poster-frame:hover {
