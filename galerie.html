@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fotogalerie chovného psa Blues for Ragnar by Reggynka – fotografie z výstav, momentky z přírody, detailní portréty a klubové úspěchy.">
+    <title>Fotogalerie | Ridgeback Ragnar</title>
+    
+    <!-- Google Fonts & FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- --- Header Navigation --- -->
+    <header class="scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/292267072_571244367820569_1608026410164852310_n.jpg" alt="Ragnar Headshot" class="logo-img">
+                <div class="logo-text">RAGNAR<span>RIDGEBACK</span></div>
+            </a>
+            
+            <button class="hamburger" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Úvod</a></li>
+                <li><a href="o-nas.html" class="nav-link">O nás</a></li>
+                <li><a href="oceneni.html" class="nav-link">Ocenění</a></li>
+                <li><a href="galerie.html" class="nav-link active">Galerie</a></li>
+                <li><a href="kontakt.html" class="nav-link">Kontakt</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- --- Page Hero --- -->
+    <section class="section" style="padding-top: 140px; background: linear-gradient(180deg, var(--color-bg-surface), var(--color-bg-dark));">
+        <div class="container">
+            <div class="health-title-container" style="margin-bottom: 0;">
+                <span class="hero-subtitle">Fotografie & Momentky</span>
+                <h2>Galerie Ragnara</h2>
+                <p>Nahlédněte do života našeho výjimečného kluka. Od výstavních úspěchů až po nezapomenutelné chvíle v přírodě.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- Interactive Gallery --- -->
+    <section class="section">
+        <div class="container">
+            <!-- Masonry-like Grid layout -->
+            <div class="gallery-grid">
+                
+                <!-- SHOWS -->
+                <div class="gallery-item wide" data-category="shows">
+                    <img src="images/322161247_1140508833327516_675176254249438774_n.jpg" alt="Trophy & awards" class="gallery-img">
+                </div>
+
+                <!-- NATURE -->
+                <div class="gallery-item" data-category="nature">
+                    <img src="images/img_20230528_070327.jpg" alt="Ragnar v běhu" class="gallery-img">
+                </div>
+
+                <div class="gallery-item" data-category="nature">
+                    <img src="images/img_20230528_070904.jpg" alt="Ragnar stopuje" class="gallery-img">
+                </div>
+
+                <!-- PORTRAITS -->
+                <div class="gallery-item" data-category="portraits">
+                    <img src="images/img_20220719_174542.jpg" alt="Ragnar postoj les" class="gallery-img">
+                </div>
+
+                <!-- SHOWS -->
+                <div class="gallery-item" data-category="shows">
+                    <img src="images/1tisk.jpg" alt="Diplom 1" class="gallery-img">
+                </div>
+
+                <div class="gallery-item" data-category="shows">
+                    <img src="images/2tisk.jpg" alt="Diplom 2" class="gallery-img">
+                </div>
+
+                <div class="gallery-item" data-category="shows">
+                    <img src="images/3tisk.jpg" alt="Diplom 3" class="gallery-img">
+                </div>
+
+                <!-- NATURE -->
+                <div class="gallery-item tall" data-category="nature">
+                    <img src="images/img_20230528_071012.jpg" alt="Ragnar na pařezu" class="gallery-img">
+                </div>
+
+                <!-- PORTRAITS -->
+                <div class="gallery-item" data-category="portraits">
+                    <img src="images/fb_img_1658166646252.jpg" alt="Ragnar closeup" class="gallery-img">
+                </div>
+
+                <div class="gallery-item" data-category="portraits">
+                    <img src="images/fb_img_1658166706055.jpg" alt="Ragnar show face" class="gallery-img">
+                </div>
+
+                <!-- NATURE -->
+                <div class="gallery-item wide" data-category="nature">
+                    <img src="images/fb_img_1690209613192.jpg" alt="Ragnar louka" class="gallery-img">
+                </div>
+
+                <!-- SHOWS -->
+                <div class="gallery-item" data-category="shows">
+                    <img src="images/4tisk.jpg" alt="Diplom 4" class="gallery-img">
+                </div>
+
+                <div class="gallery-item" data-category="shows">
+                    <img src="images/5tisk.jpg" alt="Diplom 5" class="gallery-img">
+                </div>
+
+                <!-- PORTRAITS -->
+                <div class="gallery-item" data-category="portraits">
+                    <img src="images/279376485_548359283560309_2613795522360904294_n.jpg" alt="Ragnar zimní" class="gallery-img">
+                </div>
+
+                <div class="gallery-item" data-category="portraits">
+                    <img src="images/277343394_489821019478023_529059968198129860_n.jpg" alt="Ragnar profil" class="gallery-img">
+                </div>
+
+                <!-- NATURE -->
+                <div class="gallery-item" data-category="nature">
+                    <img src="images/fb_img_1657439999413.jpg" alt="Ragnar odpočinek" class="gallery-img">
+                </div>
+
+                <div class="gallery-item" data-category="nature">
+                    <img src="images/fb_img_1658640558612.jpg" alt="Ragnar sprint" class="gallery-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- --- Custom Lightbox Modal --- -->
+    <div id="lightbox" class="lightbox">
+        <button id="lightbox-close" class="lightbox-close" aria-label="Zavřít galerii">&times;</button>
+        <button id="lightbox-prev" class="lightbox-arrow prev" aria-label="Předchozí obrázek"><i class="fa-solid fa-chevron-left"></i></button>
+        <button id="lightbox-next" class="lightbox-arrow next" aria-label="Další obrázek"><i class="fa-solid fa-chevron-right"></i></button>
+        
+        <div class="lightbox-content">
+            <img id="lightbox-img" class="lightbox-img" src="" alt="Zvětšený náhled">
+            <div id="lightbox-caption" class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <!-- --- Elegant Footer --- -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <h4>Ragnar<span>Ridgeback</span></h4>
+                <p>Blues for Ragnar by Reggynka – Mezinárodní výstavní šampion (C.I.B.), Multišampion a Grandšampion. Zdravotně plně testovaný, mimořádně úspěšný chovný pes Rhodéského Ridgebacka s dominantním genem pro ridge (R/R) a úžasně klidnou povahou.</p>
+            </div>
+            <div class="footer-links">
+                <h5>Rychlá navigace</h5>
+                <ul class="footer-nav">
+                    <li><a href="index.html" class="footer-nav-link">Úvod</a></li>
+                    <li><a href="o-nas.html" class="footer-nav-link">O nás</a></li>
+                    <li><a href="oceneni.html" class="footer-nav-link">Ocenění</a></li>
+                    <li><a href="galerie.html" class="footer-nav-link">Galerie</a></li>
+                    <li><a href="kontakt.html" class="footer-nav-link">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2026. Všechna práva vyhrazena pro <span>Blues For Ragnar by Reggynka</span>. Vytvořeno s úctou k chovu.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
