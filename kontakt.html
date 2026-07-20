@@ -50,7 +50,7 @@
     <!-- --- Contact Info & Form Grid --- -->
     <section class="section" style="padding-top: 0;">
         <div class="container">
-            <div class="contact-grid">
+            <div class="contact-centered-wrapper" style="max-width: 800px; margin: 0 auto;">
                 
                 <!-- Contact Methods -->
                 <div class="contact-info-card">
@@ -98,7 +98,7 @@
                     </div>
 
                     <!-- Embed static-styled map visualization or interactive standard iframe -->
-                    <div style="margin-top: 3rem; border-radius: var(--border-radius-md); overflow: hidden; border: 1px solid var(--border-gold); height: 200px; box-shadow: var(--shadow-sm);">
+                    <div style="margin-top: 3rem; border-radius: var(--border-radius-md); overflow: hidden; border: 1px solid var(--border-gold); height: 280px; box-shadow: var(--shadow-sm);">
                         <iframe 
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2582.492021571597!2d18.140449176985474!3d49.63558197144709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713f0a514d3dfbb%3A0xe54d9c7921a8d9df!2zxaB0cmFtYmVyc2vDoSA2MTEsIDc0MiA1OCBQxZlpYm9y!5e0!3m2!1scs!2scz!4v1700000000000!5m2!1scs!2scz" 
                             width="100%" 
@@ -109,33 +109,6 @@
                             referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
                     </div>
-                </div>
-                
-                <!-- Contact Form Wrapper -->
-                <div class="contact-form-wrapper">
-                    <span class="hero-subtitle">Napište nám</span>
-                    <h3 style="margin-bottom: 2rem; font-family: var(--font-header);">Kontaktní formulář</h3>
-                    
-                    <form id="contact-form">
-                        <div class="form-group">
-                            <label class="form-label" for="form-name">Vaše Jméno / Chovná Stanice</label>
-                            <input class="form-control" type="text" id="form-name" placeholder="Např. Jan Novák" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label class="form-label" for="form-email">Kontaktní E-mail</label>
-                            <input class="form-control" type="email" id="form-email" placeholder="Např. novak@seznam.cz" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label class="form-label" for="form-message">Vaše zpráva (krytí, dotazy)</label>
-                            <textarea class="form-control" id="form-message" placeholder="Dobrý den, máme zájem o krytí naším šampionem..." required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary" style="width: 100%; border: none; margin-top: 1rem;">
-                            <i class="fa-solid fa-paper-plane"></i> Odeslat zprávu
-                        </button>
-                    </form>
                 </div>
                 
             </div>
