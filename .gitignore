@@ -4,3 +4,10 @@ Thumbs.db
 desktop.ini
 *.log
 .vscode/
+
+# Local Node and Visual Tests
+node_modules/
+package.json
+package-lock.json
+visual-tests/
+capture_visuals.js
