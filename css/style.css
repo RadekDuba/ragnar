@@ -107,7 +107,7 @@ h1 {
     text-transform: uppercase;
 }
 
-h2 {
+h2, .page-title {
     font-size: clamp(2rem, 3.5vw, 3rem);
     text-transform: uppercase;
     position: relative;
@@ -115,7 +115,7 @@ h2 {
     margin-bottom: 2rem;
 }
 
-h2::after {
+h2::after, .page-title::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -126,7 +126,7 @@ h2::after {
     background: linear-gradient(90deg, transparent, var(--color-primary-light), transparent);
 }
 
-h2.align-left::after {
+h2.align-left::after, .page-title.align-left::after {
     left: 0;
     transform: none;
 }
