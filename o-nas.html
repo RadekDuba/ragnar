@@ -41,45 +41,110 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Structured Data (Schema.org JSON-LD) -->
+    <!-- Structured Data (Schema.org JSON-LD & FAQPage for AEO/GEO) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "AboutPage",
-      "mainEntity": {
-        "@type": "Product",
-        "name": "Blues for Ragnar by Reggynka",
-        "category": "Rhodéský Ridgeback (Chovný pes)",
-        "description": "Chovný pes plemene Rhodéský Ridgeback s dominantním genem pro ridge (R/R), DKK A, DKL 0/0.",
-        "image": "https://www.ridgebackragnar.cz/images/ragnar_gallery_20.webp",
-        "additionalProperty": [
-          {
-            "@type": "PropertyValue",
-            "name": "Datum narození",
-            "value": "2020-06-04"
-          },
-          {
-            "@type": "PropertyValue",
-            "name": "Výška / Váha",
-            "value": "67,5 cm / 45 kg"
-          },
-          {
-            "@type": "PropertyValue",
-            "name": "DKK (HD)",
-            "value": "DKK A"
-          },
-          {
-            "@type": "PropertyValue",
-            "name": "DKL (ED)",
-            "value": "0/0"
-          },
-          {
-            "@type": "PropertyValue",
-            "name": "Ridge genotyp",
-            "value": "R/R (Homozygot)"
+      "@graph": [
+        {
+          "@type": "AboutPage",
+          "@id": "https://www.ridgebackragnar.cz/o-nas.html#about",
+          "name": "O Ragnarovi & Rodokmen",
+          "url": "https://www.ridgebackragnar.cz/o-nas.html",
+          "mainEntity": {
+            "@type": "Product",
+            "name": "Blues for Ragnar by Reggynka",
+            "alternateName": ["Ragnar", "Blues For Ragnar by Reggynka", "Rhodesian Ridgeback Stud Dog Ragnar"],
+            "category": "Rhodéský Ridgeback (Chovný pes / Stud Dog / Deckrüde)",
+            "description": "Chovný pes plemene Rhodéský Ridgeback s dominantním genem pro ridge (R/R), DKK A, DKL 0/0, Mezinárodní šampion C.I.B.",
+            "image": "https://www.ridgebackragnar.cz/images/ragnar_gallery_20.webp",
+            "sameAs": [
+              "https://www.ckrr.cz",
+              "https://www.kchrr.cz",
+              "https://www.cmku.cz",
+              "https://www.genocan.eu"
+            ],
+            "additionalProperty": [
+              {
+                "@type": "PropertyValue",
+                "name": "FCI Standard",
+                "value": "FCI No. 146"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Datum narození",
+                "value": "2020-06-04"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Výška / Váha",
+                "value": "67,5 cm / 45 kg"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "DKK (HD)",
+                "value": "DKK A (HD A/A)"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "DKL (ED)",
+                "value": "DKL 0/0 (ED 0/0)"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Ridge genotyp",
+                "value": "R/R (Dominantní homozygot / 100% ridge)"
+              }
+            ]
           }
-        ]
-      }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://www.ridgebackragnar.cz/o-nas.html#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Předává Ragnar gen pro ridge (R/R) všem svým potomkům?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ano. Ragnar je geneticky testován jako dominantní homozygot (R/R). To znamená, že 100 % jeho štěňat bude mít ridge bez ohledu na genotyp kryté feny."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Jaké má Ragnar zdravotní a genetické výsledky?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ragnar má nejlepší možné ortopedické výsledky: DKK A (kyčle bez dysplazie), DKL 0/0 (lokty bez dysplazie), OCD ramen negativní, spondylóza negativní a LTV typ 0. Všechny genetické testy v laboratoři Genocan (JME, DM, MH, HemB, AOAD) jsou negativní (Clear, N/N)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Jaké jsou hlavní výstavní tituly a ocenění Ragnara?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ragnar je Mezinárodní výstavní šampion krásy C.I.B. (Interchampion), Multišampion, Grandšampion ČR, SR a Polska, Šampion ČKRR, KCHRR a ČMKU. Získal 2x BIS (Best in Show), 30x BOB (Vítěz plemene), 15x Národní Vítěz, 41x CACIB a 61x CAC."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Jaké jsou podmínky pro krytí a kde se pes nachází?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ragnar se nachází v Příboře (Česká republika) a je k dispozici ke krytí pro uchovněné feny s průkazem původu (FCI / ČMKU). Majitelku Marcelu Dubovou lze kontaktovat na tel. +420 603 714 181 nebo e-mailu macinek1@seznam.cz."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Jaký je původ a rodokmen psa Blues for Ragnar by Reggynka?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ragnar se narodil 4. června 2020 v chovatelské stanici by Reggynka. Jeho otcem je Easily Excellent Qwandoya a matkou Abanilla Princess by Reggynka."
+              }
+            }
+          ]
+        }
+      ]
     }
     </script>
 </head>
@@ -178,13 +243,13 @@
                     <div class="health-card">
                         <div class="health-status"><i class="fa-solid fa-check"></i></div>
                         <div class="health-name">Kyčle (HD)</div>
-                        <div class="health-result highlight">DKK A</div>
+                        <div class="health-result highlight">DKK A (HD A/A)</div>
                     </div>
                     
                     <div class="health-card">
                         <div class="health-status"><i class="fa-solid fa-check"></i></div>
                         <div class="health-name">Lokty (ED)</div>
-                        <div class="health-result highlight">DKL 0/0</div>
+                        <div class="health-result highlight">DKL 0/0 (ED 0/0)</div>
                     </div>
                     
                     <div class="health-card">
@@ -256,6 +321,69 @@
                 
                 <div style="text-align: center; margin-top: 3rem;">
                     <p style="font-size: 0.95rem; color: var(--color-text-muted);">Všechna genetická vyšetření a DNA profily byly zpracovány v certifikované laboratoři Genocan (<a href="https://www.genocan.eu" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: var(--color-text-secondary);">www.genocan.eu</a>).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- --- FAQ Section (AEO & Answer Engines) --- -->
+        <section class="section">
+            <div class="container">
+                <div class="health-title-container">
+                    <span class="hero-subtitle">Dotazy & Odpovědi</span>
+                    <h2>Často kladené otázky</h2>
+                    <p>Přehled klíčových informací pro chovatele o krytí, genetických testech a původu Ragnara.</p>
+                </div>
+
+                <div class="faq-container">
+                    <details class="faq-item" open>
+                        <summary class="faq-summary">
+                            <span>Předává Ragnar gen pro ridge (R/R) všem svým potomkům?</span>
+                            <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                        </summary>
+                        <div class="faq-content">
+                            <strong>Ano, jednoznačně.</strong> Ragnar je geneticky testován jako <strong>dominantní homozygot (R/R)</strong>. Znamená to, že svým potomkům vždy předává alelu pro ridge a <strong>100 % jeho štěňat bude mít ridge</strong>, a to i v případě krytí s fenou bez ridge nebo s heterozygotní vlohou.
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-summary">
+                            <span>Jaké má Ragnar zdravotní a genetické výsledky?</span>
+                            <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                        </summary>
+                        <div class="faq-content">
+                            Ragnar dosáhl nejlepších možných zdravotních výsledků: <strong>DKK A (HD A/A)</strong> – kyčle zcela bez dysplazie, <strong>DKL 0/0 (ED 0/0)</strong> – lokty čisté, <strong>OCD ramen negativní</strong>, <strong>spondylóza negativní</strong> a páteř <strong>LTV typ 0</strong>. Všechna DNA vyšetření v certifikované laboratoři Genocan (epilepsie JME, myelopatie DM, hypertermie MH, hemofilie HemB a ataxie AOAD) jsou <strong>čistá / negativní (N/N)</strong>.
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-summary">
+                            <span>Jaké jsou nejvýznamnější výstavní tituly Ragnara?</span>
+                            <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                        </summary>
+                        <div class="faq-content">
+                            Ragnar je <strong>C.I.B. Mezinárodní šampion krásy (Interchampion)</strong>, <strong>Multišampion</strong> a <strong>Grandšampion České republiky, Slovenska a Polska</strong>. Je také Šampionem klubů <strong>ČKRR, KCHRR a ČMKU</strong>. Mezi jeho největší úspěchy patří <strong>2x BIS (Absolutní vítěz výstavy)</strong>, <strong>30x BOB (Vítěz plemene)</strong>, 15x Národní vítěz a 41x CACIB.
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-summary">
+                            <span>Jaké jsou podmínky pro krytí a kde se pes nachází?</span>
+                            <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                        </summary>
+                        <div class="faq-content">
+                            Ragnar žije v <strong>Příboře v Moravskoslezském kraji (Česká republika)</strong>. Je plně k dispozici ke krytí pro řádně uchovněné feny s průkazem původu registrované pod <strong>FCI / ČMKU</strong>. Pro domluvu termínu nebo osobní návštěvu kontaktujte majitelku <strong>Marcelu Dubovou</strong> na telefonu <a href="tel:+420603714181" style="color: var(--color-primary-light); font-weight: bold;">+420 603 714 181</a> nebo e-mailem na <a href="mailto:macinek1@seznam.cz" style="text-decoration: underline; color: var(--color-text-primary);">macinek1@seznam.cz</a>.
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-summary">
+                            <span>Jaký je původ a rodokmen psa Blues for Ragnar by Reggynka?</span>
+                            <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                        </summary>
+                        <div class="faq-content">
+                            Ragnar se narodil <strong>4. června 2020</strong> v chovatelské stanici <em>by Reggynka</em>. Jeho otcem je výstavně i pracovně mimořádný pes <strong>Easily Excellent Qwandoya</strong> a matkou <strong>Abanilla Princess by Reggynka</strong>. Dne 19. 6. 2022 byl úspěšně zbonitován a stal se chovným psem.
+                        </div>
+                    </details>
                 </div>
             </div>
         </section>

@@ -1301,3 +1301,75 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* --- FAQ Accordion (AEO / GEO Knowledge Blocks) --- */
+.faq-container {
+    max-width: 900px;
+    margin: 2.5rem auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.faq-item {
+    background: var(--color-bg-surface);
+    border: 1px solid var(--border-gold);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    transition: var(--transition-fast);
+    box-shadow: var(--shadow-sm);
+}
+
+.faq-item:hover {
+    border-color: var(--border-gold-bright);
+}
+
+.faq-item[open] {
+    background: var(--color-bg-surface-elevated);
+    border-color: var(--border-gold-bright);
+    box-shadow: var(--shadow-md);
+}
+
+.faq-summary {
+    padding: 22px 26px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    user-select: none;
+    transition: color 0.3s ease;
+}
+
+.faq-summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary-light);
+    transition: transform 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.faq-item[open] .faq-icon {
+    transform: rotate(180deg);
+}
+
+.faq-content {
+    padding: 16px 26px 24px 26px;
+    color: var(--color-text-secondary);
+    line-height: 1.75;
+    font-size: 1.02rem;
+    border-top: 1px solid rgba(227, 130, 36, 0.08);
+}
+
+.faq-content strong {
+    color: var(--color-text-primary);
+}
+

@@ -41,7 +41,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Structured Data (Schema.org JSON-LD) -->
+    <!-- Structured Data (Schema.org JSON-LD - Full AEO & GEO Knowledge Graph) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -51,25 +51,50 @@
           "@id": "https://www.ridgebackragnar.cz/#website",
           "url": "https://www.ridgebackragnar.cz/",
           "name": "Ridgeback Ragnar",
-          "description": "Prezentační web chovného psa Rhodéského Ridgebacka - Blues for Ragnar by Reggynka",
+          "alternateName": "Blues for Ragnar by Reggynka",
+          "description": "Oficiální profil chovného psa Rhodéského Ridgebacka - C.I.B. Blues for Ragnar by Reggynka",
           "inLanguage": "cs"
         },
         {
           "@type": "LocalBusiness",
           "@id": "https://www.ridgebackragnar.cz/#breeder",
           "name": "Blues for Ragnar by Reggynka - Chovný pes Rhodéský Ridgeback",
+          "alternateName": ["Ragnar", "Blues For Ragnar by Reggynka", "Rhodesian Ridgeback Stud Dog Ragnar"],
           "image": "https://www.ridgebackragnar.cz/images/ragnar_big_poster.webp",
           "url": "https://www.ridgebackragnar.cz/",
           "telephone": "+420603714181",
           "email": "macinek1@seznam.cz",
+          "priceRange": "$$",
+          "sameAs": [
+            "https://www.ckrr.cz",
+            "https://www.kchrr.cz",
+            "https://www.cmku.cz",
+            "https://www.fci.be",
+            "https://www.genocan.eu"
+          ],
+          "knowsAbout": [
+            "Rhodesian Ridgeback",
+            "FCI Standard No. 146",
+            "Chovný pes",
+            "Stud Dog",
+            "C.I.B. International Beauty Champion",
+            "Genetika R/R ridge homozygot"
+          ],
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Příbor",
+            "addressRegion": "Moravskoslezský kraj",
             "addressCountry": "CZ"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "49.6406",
+            "longitude": "18.1444"
           },
           "founder": {
             "@type": "Person",
-            "name": "Marcela Dubová"
+            "name": "Marcela Dubová",
+            "jobTitle": "Chovatel a majitel"
           }
         }
       ]

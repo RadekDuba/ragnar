@@ -2,3 +2,8 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.ridgebackragnar.cz/sitemap.xml
+
+# LLM & AI Answer Engine Documentation
+# https://llmstxt.org/
+LLMs: https://www.ridgebackragnar.cz/llms.txt
+LLMs-Full: https://www.ridgebackragnar.cz/llms-full.txt
