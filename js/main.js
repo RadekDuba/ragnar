@@ -222,7 +222,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (response.ok) {
                     return response.json();
                 }
-                throw new Error('Sítové odesílání selhalo');
+                throw new Error('Síťové odesílání selhalo');
             })
             .then(data => {
                 submitBtn.innerHTML = 'Zpráva odeslána!';
