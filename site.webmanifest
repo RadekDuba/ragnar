@@ -1,0 +1,22 @@
+{
+  "name": "Ridgeback Ragnar - Blues for Ragnar by Reggynka",
+  "short_name": "Ragnar",
+  "description": "Chovný pes Rhodéský Ridgeback - Mezinárodní výstavní šampion C.I.B.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0f0d0b",
+  "theme_color": "#0f0d0b",
+  "icons": [
+    {
+      "src": "/images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/ragnar_logo.webp",
+      "sizes": "512x512",
+      "type": "image/webp"
+    }
+  ]
+}

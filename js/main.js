@@ -3,17 +3,29 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-    // --- Scroll Effect for Header ---
+    // --- Scroll Effect for Header (Throttled with rAF for 60/120fps smooth scrolling) ---
     const header = document.querySelector('header');
-    const handleScroll = () => {
-        if (window.scrollY > 50) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
+    let ticking = false;
+    
+    const updateHeaderScroll = () => {
+        if (header) {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
         }
+        ticking = false;
     };
-    window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Trigger initially in case of refresh down-page
+    
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            window.requestAnimationFrame(updateHeaderScroll);
+            ticking = true;
+        }
+    }, { passive: true });
+    
+    updateHeaderScroll(); // Trigger initially in case of refresh down-page
 
     // --- Mobile Navigation ---
     const hamburger = document.querySelector('.hamburger');

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5eedc" />
+      <stop offset="50%" stop-color="#e38224" />
+      <stop offset="100%" stop-color="#b85c14" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#24201c" />
+      <stop offset="100%" stop-color="#0f0d0b" />
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="24" fill="url(#bgGrad)" stroke="#e38224" stroke-width="3" stroke-opacity="0.4"/>
+  <!-- Stylized R / Ridgeback Monogram & Crown -->
+  <path d="M32 26 L46 16 L54 24 L62 16 L76 26 L70 34 L38 34 Z" fill="url(#goldGrad)" opacity="0.9"/>
+  <circle cx="54" cy="18" r="3" fill="#f5eedc"/>
+  <circle cx="38" cy="22" r="2.5" fill="#f5eedc"/>
+  <circle cx="70" cy="22" r="2.5" fill="#f5eedc"/>
+  <!-- Elegant Letter R -->
+  <path d="M36 40 L56 40 C63 40 68 44 68 50 C68 55 64 58 58 59 L70 76 L58 76 L48 62 L46 62 L46 76 L36 76 Z M46 48 L46 54 L55 54 C58 54 60 52 60 51 C60 49 58 48 55 48 Z" fill="url(#goldGrad)"/>
+</svg>

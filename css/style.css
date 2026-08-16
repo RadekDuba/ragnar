@@ -1,9 +1,8 @@
 /*
  * Ridgeback Ragnar - Premium Modern CSS Design System
  * Palette: Rich Wheaten (Amber), Warm Gold, Charcoal, and Cream
+ * Fonts are preloaded in HTML <head> for zero render blocking
  */
-
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap');
 
 :root {
     /* Color System */
@@ -39,6 +38,25 @@
     --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.1);
     --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.25);
     --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* --- Accessibility Skip Link --- */
+.skip-link {
+    position: absolute;
+    top: -60px;
+    left: 20px;
+    background: var(--color-primary);
+    color: #ffffff;
+    padding: 12px 20px;
+    z-index: 10000;
+    border-radius: var(--border-radius-sm);
+    font-weight: 600;
+    transition: top 0.2s ease;
+    box-shadow: var(--shadow-md);
+}
+
+.skip-link:focus {
+    top: 20px;
 }
 
 /* --- Base Reset --- */
